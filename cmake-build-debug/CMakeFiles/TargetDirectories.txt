@@ -1,0 +1,3 @@
+/home/brunon/CLionProjects/CppProgram/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/brunon/CLionProjects/CppProgram/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/brunon/CLionProjects/CppProgram/cmake-build-debug/CMakeFiles/CppProgram.dir
