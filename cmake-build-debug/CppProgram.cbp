@@ -84,7 +84,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/HasSubtreeClass.h">
+			<Option target="CppProgram"/>
+		</Unit>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/MergeList.h">
+			<Option target="CppProgram"/>
+		</Unit>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/ReversalList.h">
+			<Option target="CppProgram"/>
+		</Unit>
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/Sort.h">
+			<Option target="CppProgram"/>
+		</Unit>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/include.h">
 			<Option target="CppProgram"/>
 		</Unit>
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/main.cpp">

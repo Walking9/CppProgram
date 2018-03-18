@@ -44,7 +44,7 @@ void BubbleSort(vector<int>& array) {   //升序,向上冒泡
     }
 }
 
-//冒泡排序 QuickSort
+//快速排序 QuickSort
 //时间复杂度：平均O(nlog2n), 最好O(nlog2n), 最坏O(n2)
 //稳定性：不稳定
 //适用情况：n大
@@ -100,7 +100,7 @@ void ShellSort(vector<int>& array) {
 //时间复杂度：平均O(nlog2n), 最好O(nlog2n), 最坏O(nlog2n)
 //稳定性：不稳定
 //适用情况：n大
-void Heapify(vector<int>& array, int first, int end){
+void Heapify(vector<int>& array, int first, int end){  //建堆
     int father = first;
     int son = father * 2 + 1;
     while(son < end){
@@ -135,7 +135,7 @@ void HeapSort(vector<int>& array){
     }
 }
 
-//归并排序 HeapSort
+//归并排序 MergeSort
 //时间复杂度：平均O(nlog2n), 最好O(nlog2n), 最坏O(nlog2n)
 //稳定性：稳定
 //适用情况：n大

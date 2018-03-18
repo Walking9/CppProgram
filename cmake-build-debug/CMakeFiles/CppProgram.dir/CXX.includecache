@@ -6,10 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/brunon/CLionProjects/CppProgram/HasSubtreeClass.h
+include.h
+/home/brunon/CLionProjects/CppProgram/include.h
+
+/home/brunon/CLionProjects/CppProgram/MergeList.h
+include.h
+/home/brunon/CLionProjects/CppProgram/include.h
+
+/home/brunon/CLionProjects/CppProgram/ReversalList.h
+include.h
+/home/brunon/CLionProjects/CppProgram/include.h
+
 /home/brunon/CLionProjects/CppProgram/Sort.h
 iostream
 -
 vector
+-
+
+/home/brunon/CLionProjects/CppProgram/include.h
+iostream
 -
 
 /home/brunon/CLionProjects/CppProgram/main.cpp
@@ -17,4 +33,10 @@ iostream
 -
 Sort.h
 /home/brunon/CLionProjects/CppProgram/Sort.h
+ReversalList.h
+/home/brunon/CLionProjects/CppProgram/ReversalList.h
+MergeList.h
+/home/brunon/CLionProjects/CppProgram/MergeList.h
+HasSubtreeClass.h
+/home/brunon/CLionProjects/CppProgram/HasSubtreeClass.h
 
