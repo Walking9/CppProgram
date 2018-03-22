@@ -3,6 +3,9 @@
 
 CMakeFiles/CppProgram.dir/main.cpp.o: ../HasSubtreeClass.h
 CMakeFiles/CppProgram.dir/main.cpp.o: ../MergeList.h
+CMakeFiles/CppProgram.dir/main.cpp.o: ../Mirror.h
+CMakeFiles/CppProgram.dir/main.cpp.o: ../PrintFromTopToBottom.h
+CMakeFiles/CppProgram.dir/main.cpp.o: ../PrintMatrix.h
 CMakeFiles/CppProgram.dir/main.cpp.o: ../ReversalList.h
 CMakeFiles/CppProgram.dir/main.cpp.o: ../Sort.h
 CMakeFiles/CppProgram.dir/main.cpp.o: ../include.h

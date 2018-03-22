@@ -6,6 +6,8 @@
 #define CPPPROGRAM_INCLUDE_H
 
 #include <iostream>
+#include <vector>
+#include <queue>
 
 using namespace std;
 

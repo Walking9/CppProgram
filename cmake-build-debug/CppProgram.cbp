@@ -90,6 +90,15 @@
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/MergeList.h">
 			<Option target="CppProgram"/>
 		</Unit>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/Mirror.h">
+			<Option target="CppProgram"/>
+		</Unit>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/PrintFromTopToBottom.h">
+			<Option target="CppProgram"/>
+		</Unit>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/PrintMatrix.h">
+			<Option target="CppProgram"/>
+		</Unit>
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/ReversalList.h">
 			<Option target="CppProgram"/>
 		</Unit>

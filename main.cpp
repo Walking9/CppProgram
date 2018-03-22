@@ -3,6 +3,9 @@
 #include "ReversalList.h"
 #include "MergeList.h"
 #include "HasSubtreeClass.h"
+#include "Mirror.h"
+#include "PrintMatrix.h"
+#include "PrintFromTopToBottom.h"
 
 int main() {
 //    vector<int> test;
@@ -45,9 +48,32 @@ int main() {
     /*测试二叉树*/
     int tree1[] = {8, 8, 7, 9, 2, -1, -1, -1, -1, 4, 7};
     TreeNode* newTree1 = createTree(tree1, 11, 1);
-    int tree2[] = {8, 9, 2};
-    TreeNode* newTree2 = createTree(tree2, 3, 1);
-    HasSubtreeClass test;
-    test.HasSubtree(newTree1, newTree2);
+    PrintFromTopToBottomClass c;
+    vector<int> v = c.PrintFromTopToBottom(newTree1);
+    for(int i=0; i<v.size(); i++)
+        cout << v[i] << " ";
+//    int tree2[] = {8, 9, 2};
+//    TreeNode* newTree2 = createTree(tree2, 3, 1);
+//    MirrorClass test;
+//    test.Mirror(newTree1);
+
+    /*测试二维数组*/
+//    int test[4][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+//    vector<int> myvector;
+//    vector<vector<int>> temp;
+//    for(int i=0; i<4; i++) {
+//        for(int j=0; j<4; j++) {
+//            myvector.push_back(test[i][j]);
+//        }
+//        temp.push_back(myvector);
+//        myvector.clear();
+//    }
+//    PrintMatrixClass c;
+//    myvector = c.printMatrix(temp);
+//    for(int i=0; i<myvector.size(); i++) {
+//        cout << myvector[i] << " ";
+//    }
+
+    /*测试栈*/
     return 0;
 }

@@ -14,6 +14,20 @@ include.h
 include.h
 /home/brunon/CLionProjects/CppProgram/include.h
 
+/home/brunon/CLionProjects/CppProgram/Mirror.h
+include.h
+/home/brunon/CLionProjects/CppProgram/include.h
+
+/home/brunon/CLionProjects/CppProgram/PrintFromTopToBottom.h
+include.h
+/home/brunon/CLionProjects/CppProgram/include.h
+
+/home/brunon/CLionProjects/CppProgram/PrintMatrix.h
+stack
+-
+include.h
+/home/brunon/CLionProjects/CppProgram/include.h
+
 /home/brunon/CLionProjects/CppProgram/ReversalList.h
 include.h
 /home/brunon/CLionProjects/CppProgram/include.h
@@ -27,6 +41,10 @@ vector
 /home/brunon/CLionProjects/CppProgram/include.h
 iostream
 -
+vector
+-
+queue
+-
 
 /home/brunon/CLionProjects/CppProgram/main.cpp
 iostream
@@ -39,4 +57,10 @@ MergeList.h
 /home/brunon/CLionProjects/CppProgram/MergeList.h
 HasSubtreeClass.h
 /home/brunon/CLionProjects/CppProgram/HasSubtreeClass.h
+Mirror.h
+/home/brunon/CLionProjects/CppProgram/Mirror.h
+PrintMatrix.h
+/home/brunon/CLionProjects/CppProgram/PrintMatrix.h
+PrintFromTopToBottom.h
+/home/brunon/CLionProjects/CppProgram/PrintFromTopToBottom.h
 

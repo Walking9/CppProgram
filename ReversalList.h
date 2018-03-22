@@ -7,7 +7,7 @@
 
 #include "include.h"
 
-class Reverse {
+class ReverseClass {
 public:
     ListNode* ReverseList(ListNode* pHead) {
         ListNode* ptr0 = NULL, *ptr1 = pHead, *ptr2 = NULL;
