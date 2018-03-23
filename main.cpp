@@ -6,6 +6,7 @@
 #include "Mirror.h"
 #include "PrintMatrix.h"
 #include "PrintFromTopToBottom.h"
+#include "FindPath.h"
 
 int main() {
 //    vector<int> test;
@@ -48,10 +49,11 @@ int main() {
     /*测试二叉树*/
     int tree1[] = {8, 8, 7, 9, 2, -1, -1, -1, -1, 4, 7};
     TreeNode* newTree1 = createTree(tree1, 11, 1);
-    PrintFromTopToBottomClass c;
-    vector<int> v = c.PrintFromTopToBottom(newTree1);
-    for(int i=0; i<v.size(); i++)
-        cout << v[i] << " ";
+    FindPathClass c;
+    vector<vector<int>> v = c.FindPath(newTree1, 25);
+//    vector<int> v = c.PrintFromTopToBottom(newTree1);
+//    for(int i=0; i<v.size(); i++)
+//        cout << v[i] << " ";
 //    int tree2[] = {8, 9, 2};
 //    TreeNode* newTree2 = createTree(tree2, 3, 1);
 //    MirrorClass test;
@@ -75,5 +77,8 @@ int main() {
 //    }
 
     /*测试栈*/
+
+
+
     return 0;
 }

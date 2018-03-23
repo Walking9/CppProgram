@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/brunon/CLionProjects/CppProgram/FindPath.h
+include.h
+/home/brunon/CLionProjects/CppProgram/include.h
+
 /home/brunon/CLionProjects/CppProgram/HasSubtreeClass.h
 include.h
 /home/brunon/CLionProjects/CppProgram/include.h
@@ -45,6 +49,8 @@ vector
 -
 queue
 -
+stack
+-
 
 /home/brunon/CLionProjects/CppProgram/main.cpp
 iostream
@@ -63,4 +69,6 @@ PrintMatrix.h
 /home/brunon/CLionProjects/CppProgram/PrintMatrix.h
 PrintFromTopToBottom.h
 /home/brunon/CLionProjects/CppProgram/PrintFromTopToBottom.h
+FindPath.h
+/home/brunon/CLionProjects/CppProgram/FindPath.h
 

@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/FindPath.h">
+			<Option target="CppProgram"/>
+		</Unit>
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/HasSubtreeClass.h">
 			<Option target="CppProgram"/>
 		</Unit>
@@ -99,10 +102,16 @@
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/PrintMatrix.h">
 			<Option target="CppProgram"/>
 		</Unit>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/RandomListClone.h">
+			<Option target="CppProgram"/>
+		</Unit>
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/ReversalList.h">
 			<Option target="CppProgram"/>
 		</Unit>
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/Sort.h">
+			<Option target="CppProgram"/>
+		</Unit>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/VerifySquenceOfBST.h">
 			<Option target="CppProgram"/>
 		</Unit>
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/include.h">
