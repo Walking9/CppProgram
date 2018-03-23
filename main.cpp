@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include "Sort.h"
 #include "ReversalList.h"
 #include "MergeList.h"
@@ -7,10 +8,11 @@
 #include "PrintMatrix.h"
 #include "PrintFromTopToBottom.h"
 #include "FindPath.h"
+#include "math.h"
 
 int main() {
 //    vector<int> test;
-//    test.push_back(23);
+//    test.push_back(999);
 //    test.push_back(14);
 //    test.push_back(6);
 //    test.push_back(1);
@@ -18,10 +20,10 @@ int main() {
 //    test.push_back(62);
 //    test.push_back(37);
 //    test.push_back(12);
-////    ShellSort(test);
-////    for(int i=0; i<test.size(); i++) {
-////        cout << test.at(i) << " ";
-////    }
+//    InsertSortTest(test);
+//    for(int i=0; i<test.size(); i++) {
+//        cout << test.at(i) << " ";
+//    }
 //    int array[6] = {2,5463, 34, 5463, 54,3};
 //    HeapSort(test);
 //    for(int i=0; i<test.size(); i++) {
@@ -47,10 +49,10 @@ int main() {
 //    }
 
     /*测试二叉树*/
-    int tree1[] = {8, 8, 7, 9, 2, -1, -1, -1, -1, 4, 7};
-    TreeNode* newTree1 = createTree(tree1, 11, 1);
-    FindPathClass c;
-    vector<vector<int>> v = c.FindPath(newTree1, 25);
+//    int tree1[] = {8, 8, 7, 9, 2, -1, -1, -1, -1, 4, 7};
+//    TreeNode* newTree1 = createTree(tree1, 11, 1);
+//    FindPathClass c;
+//    vector<vector<int>> v = c.FindPath(newTree1, 25);
 //    vector<int> v = c.PrintFromTopToBottom(newTree1);
 //    for(int i=0; i<v.size(); i++)
 //        cout << v[i] << " ";
@@ -77,8 +79,33 @@ int main() {
 //    }
 
     /*测试栈*/
-
-
-
-    return 0;
+//
+//    int t = 0, temp = 0;
+//    cin >> t;
+//    vector<int> x, y, myvector;
+//    for(int i=0; i < t; i++) {
+//        for(int j=0; j < 4; j++) {
+//            cin >> temp;
+//            x.push_back(temp);
+//        }
+//        for(int j=0; j < 4; j++) {
+//            cin >> temp;
+//            y.push_back(temp);
+//        }
+//    }
+//    //input end
+//    for(int i=0; i < t; i++) {
+//        myvector.push_back(sqrt(pow(x[0+4*i]-x[1+4*i], 2) + pow(y[0+4*i]-y[1+4*i], 2)));
+//        myvector.push_back(sqrt(pow(x[0+4*i]-x[2+4*i], 2) + pow(y[0+4*i]-y[2+4*i], 2)));
+//        myvector.push_back(sqrt(pow(x[0+4*i]-x[3+4*i], 2) + pow(y[0+4*i]-y[3+4*i], 2)));
+//        myvector.push_back(sqrt(pow(x[1+4*i]-x[2+4*i], 2) + pow(y[1+4*i]-y[2+4*i], 2)));
+//        myvector.push_back(sqrt(pow(x[1+4*i]-x[3+4*i], 2) + pow(y[1+4*i]-y[3+4*i], 2)));
+//        myvector.push_back(sqrt(pow(x[2+4*i]-x[3+4*i], 2) + pow(y[2+4*i]-y[3+4*i], 2)));
+//        sort(myvector.begin(), myvector.end());
+//        if(myvector[0] == myvector[1] && myvector[0] > myvector[2] && myvector[2] == myvector[3] && myvector[3] == myvector[4] && myvector[4] == myvector[5])
+//            cout << "Yes" << endl;
+//        else
+//            cout << "No" << endl;
+//    }
+//    return 0;
 }

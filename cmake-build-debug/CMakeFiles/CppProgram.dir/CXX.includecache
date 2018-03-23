@@ -55,6 +55,8 @@ stack
 /home/brunon/CLionProjects/CppProgram/main.cpp
 iostream
 -
+algorithm
+-
 Sort.h
 /home/brunon/CLionProjects/CppProgram/Sort.h
 ReversalList.h
@@ -71,4 +73,6 @@ PrintFromTopToBottom.h
 /home/brunon/CLionProjects/CppProgram/PrintFromTopToBottom.h
 FindPath.h
 /home/brunon/CLionProjects/CppProgram/FindPath.h
+math.h
+/home/brunon/CLionProjects/CppProgram/math.h
 

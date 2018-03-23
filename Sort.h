@@ -23,9 +23,24 @@ void InsertSort(vector<int> &array) {  //升序
                 array[j] = array[j-1];
                 array[j-1] = temp;
             }
+            else break;
         }
     }
 }
+//void InsertSortTest(vector<int> &array) {
+//    int temp;
+//    for(int i=1; i<array.size(); i++) {
+//        for(int j=i; j>0; j--) {
+//            if(array[j] < array[j-1]) {
+//                temp = array[j];
+//                array[j] = array[j-1];
+//                array[j-1] = temp;
+//            }
+//            else break;
+//        }
+//    }
+//}
+
 
 //冒泡排序 BubbleSort
 //时间复杂度：平均O(n2), 最好O(n), 最坏O(n2)
@@ -34,7 +49,7 @@ void InsertSort(vector<int> &array) {  //升序
 void BubbleSort(vector<int>& array) {   //升序,向上冒泡
     int temp;
     for(int i=0; i<array.size(); i++) {
-        for(int j=array.size()-1; j>=i; --j) {
+        for(int j=array.size()-1; j>i; --j) {
             if(array[j] < array[j-1]) {
                 temp = array[j];
                 array[j] = array[j-1];
@@ -43,6 +58,19 @@ void BubbleSort(vector<int>& array) {   //升序,向上冒泡
         }
     }
 }
+//
+//void BubbleSortTest(vector<int> &array) {
+//    int temp;
+//    for(int i=0; i<array.size(); i++) {
+//        for(int j=array.size()-1; j>i; j--) {
+//            if(array[j] < array[j-1]) {
+//                temp = array[j];
+//                array[j] = array[j-1];
+//                array[j-1] = temp;
+//            }
+//        }
+//    }
+//}
 
 //快速排序 QuickSort
 //时间复杂度：平均O(nlog2n), 最好O(nlog2n), 最坏O(n2)
@@ -74,6 +102,8 @@ void QuickSort(vector<int>& array, int begin, int end) {
         QuickSort(array, middle+1, end);
     }
 }
+
+void
 
 //希尔排序 ShellSort
 //时间复杂度：平均O(n1.3), 最好O(n), 最坏O(n2)
@@ -149,8 +179,6 @@ void Merge(int arr[], int reg[], int start, int end) {
     //然后合并
     Merge(arr, reg, start1, end1);
     Merge(arr, reg, start2, end2);
-
-
     int k = start;
     //两个序列一一比较,哪的序列的元素小就放进reg序列里面,然后位置+1再与另一个序列原来位置的元素比较
     //如此反复,可以把两个有序的序列合并成一个有序的序列
