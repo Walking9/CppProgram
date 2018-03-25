@@ -1,5 +1,3 @@
-#include <iostream>
-#include <algorithm>
 #include "Sort.h"
 #include "ReversalList.h"
 #include "MergeList.h"
@@ -8,7 +6,8 @@
 #include "PrintMatrix.h"
 #include "PrintFromTopToBottom.h"
 #include "FindPath.h"
-#include "math.h"
+#include "Problem.h"
+
 
 int main() {
 //    vector<int> test;
@@ -20,7 +19,7 @@ int main() {
 //    test.push_back(62);
 //    test.push_back(37);
 //    test.push_back(12);
-//    InsertSortTest(test);
+//    QuickSort(test, 0, test.size()-1);
 //    for(int i=0; i<test.size(); i++) {
 //        cout << test.at(i) << " ";
 //    }
@@ -108,4 +107,61 @@ int main() {
 //            cout << "No" << endl;
 //    }
 //    return 0;
+
+
+    //-----头条笔试3-24
+    int n, num1, num2;
+    cin >> n;
+    char c, symbol;
+    getchar();
+    for(int i=0; i<n; i++) {
+        num1 = getchar() - '0';
+        symbol = getchar();
+        num2 = getchar() - '0';
+        if(symbol == '+')
+            printNumber(num1 + num2);
+        else if(symbol == '-')
+            printNumber(num1 - num2);
+        else if(symbol == '*')
+            printNumber(num1 * num2);
+        if(symbol == '/')
+            printNumber(num1 / num2);
+        getchar();
+
+    }
+
+
 }
+
+//
+//
+//int function(vector<int> v, int k) {
+//    sort(v.begin(), v.end());
+//    int count = 0, target;
+//    int size = v.size();
+//    for(int i=0; i < size-1; i++) {
+//        target = v[i] + k;
+////        for(int j=0; j < v.size(); j++) {   //不用二分查找试试
+////            if(v[j] == target){
+////                count++;
+////                break;
+////            }
+////            else if(v[j] > target) break;
+////        }
+//        if(find(v, i+1, size-1, target)) count++;
+//
+//    }
+//    return count;
+//}
+//
+//
+//bool find(vector<int> v, int begin, int end, int target) {
+//    int middle = (begin + end)/2;
+//    while(begin != end) {
+//        if(target > v[middle]) begin = middle + 1;
+//        else if(target < v[middle]) end = middle - 1;
+//        else return true;
+//    }
+//    if(v[begin] != target) return false;
+//    else return true;
+//}

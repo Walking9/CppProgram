@@ -102,6 +102,9 @@
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/PrintMatrix.h">
 			<Option target="CppProgram"/>
 		</Unit>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/Problem.h">
+			<Option target="CppProgram"/>
+		</Unit>
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/RandomListClone.h">
 			<Option target="CppProgram"/>
 		</Unit>

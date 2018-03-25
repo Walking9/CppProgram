@@ -94,16 +94,28 @@ int Partition(vector<int>& array, int begin, int end) {   //划分
     array[i] = temp;
     return i;
 }
+
+
+int PartitionTest(vector<int>& array, int begin, int end) {
+    int temp = array[begin];
+    while(begin < end) {
+        while(begin < end && array[end] > temp) end--;
+        if(begin < end) {array[begin] = array[end]; begin++;}
+        while(begin < end && array[begin] < temp) begin++;
+        if(begin < end){ array[end] = array[begin];end--;}
+    }
+    array[begin] = temp;
+    return begin;
+}
 void QuickSort(vector<int>& array, int begin, int end) {
     int middle;
     if(begin < end) {
-        middle = Partition(array, begin, end);
+        middle = PartitionTest(array, begin, end);
         QuickSort(array, begin, middle-1);
         QuickSort(array, middle+1, end);
     }
 }
 
-void
 
 //希尔排序 ShellSort
 //时间复杂度：平均O(n1.3), 最好O(n), 最坏O(n2)
