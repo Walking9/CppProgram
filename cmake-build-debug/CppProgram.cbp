@@ -96,6 +96,9 @@
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/Mirror.h">
 			<Option target="CppProgram"/>
 		</Unit>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/Permutation.h">
+			<Option target="CppProgram"/>
+		</Unit>
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/PrintFromTopToBottom.h">
 			<Option target="CppProgram"/>
 		</Unit>

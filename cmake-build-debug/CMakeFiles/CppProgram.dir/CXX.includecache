@@ -32,6 +32,10 @@ stack
 include.h
 /home/brunon/CLionProjects/CppProgram/include.h
 
+/home/brunon/CLionProjects/CppProgram/Problem.h
+include.h
+/home/brunon/CLionProjects/CppProgram/include.h
+
 /home/brunon/CLionProjects/CppProgram/ReversalList.h
 include.h
 /home/brunon/CLionProjects/CppProgram/include.h
@@ -51,12 +55,14 @@ queue
 -
 stack
 -
-
-/home/brunon/CLionProjects/CppProgram/main.cpp
-iostream
+math.h
 -
 algorithm
 -
+cstring
+-
+
+/home/brunon/CLionProjects/CppProgram/main.cpp
 Sort.h
 /home/brunon/CLionProjects/CppProgram/Sort.h
 ReversalList.h
@@ -73,6 +79,6 @@ PrintFromTopToBottom.h
 /home/brunon/CLionProjects/CppProgram/PrintFromTopToBottom.h
 FindPath.h
 /home/brunon/CLionProjects/CppProgram/FindPath.h
-math.h
-/home/brunon/CLionProjects/CppProgram/math.h
+Problem.h
+/home/brunon/CLionProjects/CppProgram/Problem.h
 

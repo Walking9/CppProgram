@@ -78,90 +78,11 @@ int main() {
 //    }
 
     /*测试栈*/
-//
-//    int t = 0, temp = 0;
-//    cin >> t;
-//    vector<int> x, y, myvector;
-//    for(int i=0; i < t; i++) {
-//        for(int j=0; j < 4; j++) {
-//            cin >> temp;
-//            x.push_back(temp);
-//        }
-//        for(int j=0; j < 4; j++) {
-//            cin >> temp;
-//            y.push_back(temp);
-//        }
-//    }
-//    //input end
-//    for(int i=0; i < t; i++) {
-//        myvector.push_back(sqrt(pow(x[0+4*i]-x[1+4*i], 2) + pow(y[0+4*i]-y[1+4*i], 2)));
-//        myvector.push_back(sqrt(pow(x[0+4*i]-x[2+4*i], 2) + pow(y[0+4*i]-y[2+4*i], 2)));
-//        myvector.push_back(sqrt(pow(x[0+4*i]-x[3+4*i], 2) + pow(y[0+4*i]-y[3+4*i], 2)));
-//        myvector.push_back(sqrt(pow(x[1+4*i]-x[2+4*i], 2) + pow(y[1+4*i]-y[2+4*i], 2)));
-//        myvector.push_back(sqrt(pow(x[1+4*i]-x[3+4*i], 2) + pow(y[1+4*i]-y[3+4*i], 2)));
-//        myvector.push_back(sqrt(pow(x[2+4*i]-x[3+4*i], 2) + pow(y[2+4*i]-y[3+4*i], 2)));
-//        sort(myvector.begin(), myvector.end());
-//        if(myvector[0] == myvector[1] && myvector[0] > myvector[2] && myvector[2] == myvector[3] && myvector[3] == myvector[4] && myvector[4] == myvector[5])
-//            cout << "Yes" << endl;
-//        else
-//            cout << "No" << endl;
-//    }
+
 //    return 0;
-
-
-    //-----头条笔试3-24
-    int n, num1, num2;
-    cin >> n;
-    char c, symbol;
-    getchar();
-    for(int i=0; i<n; i++) {
-        num1 = getchar() - '0';
-        symbol = getchar();
-        num2 = getchar() - '0';
-        if(symbol == '+')
-            printNumber(num1 + num2);
-        else if(symbol == '-')
-            printNumber(num1 - num2);
-        else if(symbol == '*')
-            printNumber(num1 * num2);
-        if(symbol == '/')
-            printNumber(num1 / num2);
-        getchar();
-
-    }
+//    string s = "fasdf";
+//    swap(s[0], s[3]);
+//    cout << s;
 
 
 }
-
-//
-//
-//int function(vector<int> v, int k) {
-//    sort(v.begin(), v.end());
-//    int count = 0, target;
-//    int size = v.size();
-//    for(int i=0; i < size-1; i++) {
-//        target = v[i] + k;
-////        for(int j=0; j < v.size(); j++) {   //不用二分查找试试
-////            if(v[j] == target){
-////                count++;
-////                break;
-////            }
-////            else if(v[j] > target) break;
-////        }
-//        if(find(v, i+1, size-1, target)) count++;
-//
-//    }
-//    return count;
-//}
-//
-//
-//bool find(vector<int> v, int begin, int end, int target) {
-//    int middle = (begin + end)/2;
-//    while(begin != end) {
-//        if(target > v[middle]) begin = middle + 1;
-//        else if(target < v[middle]) end = middle - 1;
-//        else return true;
-//    }
-//    if(v[begin] != target) return false;
-//    else return true;
-//}

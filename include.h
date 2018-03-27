@@ -11,6 +11,7 @@
 #include <stack>
 #include <math.h>
 #include <algorithm>
+#include <cstring>
 
 using namespace std;
 
