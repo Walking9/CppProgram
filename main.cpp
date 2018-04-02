@@ -7,22 +7,26 @@
 #include "PrintFromTopToBottom.h"
 #include "FindPath.h"
 #include "Problem.h"
+#include "GetLeastNumbers.h"
 
 
 int main() {
-//    vector<int> test;
-//    test.push_back(999);
-//    test.push_back(14);
-//    test.push_back(6);
-//    test.push_back(1);
-//    test.push_back(87);
-//    test.push_back(62);
-//    test.push_back(37);
-//    test.push_back(12);
-//    QuickSort(test, 0, test.size()-1);
-//    for(int i=0; i<test.size(); i++) {
-//        cout << test.at(i) << " ";
-//    }
+    vector<int> test;
+    test.push_back(999);
+    test.push_back(14);
+    test.push_back(6);
+    test.push_back(1);
+    test.push_back(87);
+    test.push_back(62);
+    test.push_back(37);
+    test.push_back(12);
+//    HeapSort_su(test);
+    GetLeastNumbersClass s;
+    test[0] = 3;
+    vector<int> v = s.GetLeastNumbers_Solution(test, 2);
+    for(int i=0; i<v.size(); i++) {
+        cout << v.at(i) << " ";
+    }
 //    int array[6] = {2,5463, 34, 5463, 54,3};
 //    HeapSort(test);
 //    for(int i=0; i<test.size(); i++) {

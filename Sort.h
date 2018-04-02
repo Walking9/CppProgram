@@ -142,11 +142,11 @@ void ShellSort(vector<int>& array) {
 //时间复杂度：平均O(nlog2n), 最好O(nlog2n), 最坏O(nlog2n)
 //稳定性：不稳定
 //适用情况：n大
-void Heapify(vector<int>& array, int first, int end){  //建堆
+void Heapify(vector<int>& array, int first, int end){  //调整子堆
     int father = first;
     int son = father * 2 + 1;
-    while(son < end){
-        if(son + 1 < end && array[son] < array[son+1]) ++son;
+    while(son <= end){
+        if(son + 1 <= end && array[son] < array[son+1]) ++son;
         //如果父节点大于子节点则表示调整完毕
         if(array[father] > array[son]) break;
         else {
@@ -160,20 +160,50 @@ void Heapify(vector<int>& array, int first, int end){  //建堆
         }
     }
 }
+
+
+void Heapify_su(vector<int>& array, int begin, int end) {
+    int father = begin, son = father*2 + 1, temp;
+    while(son <= end) {
+        if(son+1 <= end && array[son] < array[son+1]) son++;
+        if(array[son] > array[father]) {
+            temp = array[son];
+            array[son] = array[father];
+            array[father] = temp;
+            father = son;
+            son = father*2+1;
+        }
+        else break;
+    }
+}
+
+void HeapSort_su(vector<int>& array) {
+    int len = array.size(), temp;
+    for(int i=len/2-1; i>=0; i--) { //建堆, 从最后一个不是叶子节点,公式：len/2-1, 开始向上建堆
+        Heapify_su(array, i, len-1);
+    }
+    for(int i=len-1; i>=0; i--) {
+        temp = array[0];
+        array[0] = array[i];
+        array[i] = temp;
+        Heapify_su(array, 0, i-1);
+    }
+}
+
 //堆排序
 void HeapSort(vector<int>& array){
     int i, len = array.size();
     //初始化堆，从最后一个父节点开始
-    for(i = len/2 - 1; i >= 0; --i){
-        Heapify(array,i,len);
+    for(i = len/2 - 1; i >= 0; --i){   //建堆
+        Heapify(array,i,len-1);
     }
     //从堆中的取出最大的元素再调整堆
     for(i = len - 1;i > 0;--i){
-        int temp = array[i];
+        int temp = array[i];   //输出堆
         array[i] = array[0];
         array[0] = temp;
         //调整成堆
-        Heapify(array,0,i);
+        Heapify(array,0,i-1);
     }
 }
 

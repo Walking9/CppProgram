@@ -10,6 +10,10 @@
 include.h
 /home/brunon/CLionProjects/CppProgram/include.h
 
+/home/brunon/CLionProjects/CppProgram/GetLeastNumbers.h
+include.h
+/home/brunon/CLionProjects/CppProgram/include.h
+
 /home/brunon/CLionProjects/CppProgram/HasSubtreeClass.h
 include.h
 /home/brunon/CLionProjects/CppProgram/include.h
@@ -81,4 +85,6 @@ FindPath.h
 /home/brunon/CLionProjects/CppProgram/FindPath.h
 Problem.h
 /home/brunon/CLionProjects/CppProgram/Problem.h
+GetLeastNumbers.h
+/home/brunon/CLionProjects/CppProgram/GetLeastNumbers.h
 

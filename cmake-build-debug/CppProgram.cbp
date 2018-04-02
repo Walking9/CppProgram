@@ -87,6 +87,9 @@
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/FindPath.h">
 			<Option target="CppProgram"/>
 		</Unit>
+		<Unit filename="/home/brunon/CLionProjects/CppProgram/GetLeastNumbers.h">
+			<Option target="CppProgram"/>
+		</Unit>
 		<Unit filename="/home/brunon/CLionProjects/CppProgram/HasSubtreeClass.h">
 			<Option target="CppProgram"/>
 		</Unit>
