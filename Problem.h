@@ -320,5 +320,109 @@ void printNumber(int num) {  //字库,空间换时间
 //    return 0;
 //}
 
+/********4.3华为笔试************/
+//    string s = "fasdf";
+//    swap(s[0], s[3]);
+//    cout << s;
+//        string s;
+//        cin >> s;
+//        int len = s.length(), maxlen = 0, count = 0;
+//        for(int i = 0; i < len; i++) {
+//            count = 1;
+//            //maxlen分奇偶讨论
+//            for(int j = 1; j < len; j++) {
+//                if(i-j< 0 || i+j >= len || s[i-j] != s[i+j]) break;  //一旦检测到不是对称子串则break
+//                count += 2;
+//            }
+//            maxlen = max(maxlen, count);
+//            count = 0;
+//            for(int j = 1; j < len; j++) {
+//                if(i-j+1 < 0 || i+j >= len || s[i-j+1] != s[i+j]) break;
+//                count += 2;
+//            }
+//            maxlen = max(maxlen, count);
+//        }
+//        cout << maxlen;
+//        return 0;
+//}
+
+
+//    string outString[] = {"Unspecified", "Loopback", "LinkLocal", "SiteLocal", "GlobalUnicast", "Multicast", "Error"};
+//    string s;
+//    cin >> s;
+//    //先检查是不是Ipv6格式
+//    int len = s.length(), i;
+//    if(len != 39) {
+//        cout << "Error" << endl;
+//    } else {
+//        for(i=0; i<len; i++) {
+//            if(i%5 == 4 && '.' == s[i]) continue;
+//            else if(('0' <= s[i] <= '9') || ('A' <= s[i] <= 'F') ) continue;
+//            else {cout << "Error"<< endl; break;}
+//        }
+//        if(len == i){   //符合格式
+//            if('F' == s[0] && 'E' == s[1] &&'8' <= s[2] <= 'B') {  //链路 FE80 ~ FEBF
+//                cout << "LinkLocal" << endl;
+//            }
+//            else if('F' == s[0] && 'E' == s[1] &&'C' <= s[2] <= 'F') {  //链路 FE80 ~ FEBF
+//                cout << "SiteLocal" << endl;
+//            }
+//            else if('F' == s[0] && 'F' == s[1]) {  //
+//                cout << "Multicast" << endl;
+//            }
+//            else if(s[len-1] == '1') { //环回
+//                for(i=0; i<len-1; i++){
+//                    if(i%5 != 4 && s[i] != '0') break;
+//                }
+//                if(i == len-1) cout << "Loopback" << endl;
+//            }
+//            else cout << "GlobalUnicast" << endl;
+//        }
+//    }
+//int myback, input;
+//    char c = 0;
+//    cin >> myback;
+//    vector<int> w, v;
+//    while('\n' != c) {
+//        cin >> input;
+//        c = getchar();
+//        w.push_back(input);
+//    }
+//    c = 0;
+//    while('\n' != c) {
+//        cin >> input;
+//        c = getchar();
+//        v.push_back(input);
+//    }
+//    for(int i=0; i<v.size(); i++)
+//        cout << v[i] << " ";
+//    int* x = new int[5];
+//    int **m = new int*[v.size()];   //二维数组
+//    for(int i=0; i<v.size(); i++) {
+//        m[i] = new int[myback+1];
+//    }
+//    for(int i=1; i<v.size(); i++) {
+//        for(int j=1; j<=myback; j++) {
+//            if(j < w[i]) m[i][j] = m[i-1][j];
+//            else {
+//                if(m[i-1][j-w[i]]+v[i] > m[i-1][j]) m[i][j] = m[i-1][j-w[i]]+v[i]; //选择价值较大者
+//                else m[i][j]=m[i-1][j];
+//            }
+//        }
+//    }
+//    for(int i=v.size()-1;i>=1;i--){
+//        if(m[i][myback] > m[i-1][myback]){
+//            x[i] = 1;
+//            myback -= w[i];
+//        }
+//        else x[i]=0;
+//    }
+//    for(int i=0; i<v.size(); i++) {
+//        if(1 == x[i] && i != v.size()-1)
+//            cout << i << " ";
+//        if(1 == x[i] && i == v.size()-1)
+//            cout << i;
+//    }
+
 
 #endif //CPPPROGRAM_PROBLEM_H

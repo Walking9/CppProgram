@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/brunon/CLionProjects/CppProgram/Backpack.h
+include.h
+/home/brunon/CLionProjects/CppProgram/include.h
+
 /home/brunon/CLionProjects/CppProgram/FindPath.h
 include.h
 /home/brunon/CLionProjects/CppProgram/include.h
@@ -87,4 +91,6 @@ Problem.h
 /home/brunon/CLionProjects/CppProgram/Problem.h
 GetLeastNumbers.h
 /home/brunon/CLionProjects/CppProgram/GetLeastNumbers.h
+Backpack.h
+/home/brunon/CLionProjects/CppProgram/Backpack.h
 
