@@ -10,7 +10,6 @@
 #include "GetLeastNumbers.h"
 #include "Backpack.h"
 
-
 int main() {
 //    vector<int> test;
 //    test.push_back(999);
@@ -85,28 +84,36 @@ int main() {
     /*测试栈*/
 
 //    return 0;
-    int myback, input;
-    char c = 0;
-    cin >> myback;
-    vector<int> w, v;
-    while('\n' != c) {
-        cin >> input;
-        c = getchar();
-        w.push_back(input);
-    }
-    c = 0;
-    while('\n' != c) {
-        cin >> input;
-        c = getchar();
-        v.push_back(input);
-    }
-    int* x = new int[5];
-    int **m = new int*[v.size()];   //二维数组
-    for(int i=0; i<v.size(); i++) {
-        m[i] = new int[myback+1];
-    }
-    BackpackClass bb;
-    bb.backpack(w, v, myback);
+//    int myback, input;
+//    char c = 0;
+//    cin >> myback;
+//    vector<int> w, v;
+//    while('\n' != c) {
+//        cin >> input;
+//        c = getchar();
+//        w.push_back(input);
+//    }
+//    c = 0;
+//    while('\n' != c) {
+//        cin >> input;
+//        c = getchar();
+//        v.push_back(input);
+//    }
+//    int* x = new int[5];
+//    int **m = new int*[v.size()];   //二维数组
+//    for(int i=0; i<v.size(); i++) {
+//        m[i] = new int[myback+1];
+//    }
+//    BackpackClass bb;
+//    bb.backpack(w, v, myback);
+//
+//    return 0;
+
+
+
+
+
+
 
     return 0;
 }
